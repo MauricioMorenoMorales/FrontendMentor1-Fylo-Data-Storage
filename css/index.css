@@ -1,0 +1,12 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution .attribution a {
+  color: #3e52a3;
+}
+
+.status__bar_progression {
+  background-color: black;
+  width: 100px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "fylo_data_storage",
+  "version": "1.0.0",
+  "description": "Proyecto Frontend mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauricioMorenoMorales/FrontendMentor1-Fylo-Data-Storage.git"
+  },
+  "keywords": [
+    "Exercises"
+  ],
+  "author": "Mauricio Moreno Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauricioMorenoMorales/FrontendMentor1-Fylo-Data-Storage/issues"
+  },
+  "homepage": "https://github.com/MauricioMorenoMorales/FrontendMentor1-Fylo-Data-Storage#readme"
+}

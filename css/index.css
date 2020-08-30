@@ -1,12 +1,40 @@
+:root {
+  --pale-blue: #DDDBFF;
+  --grayish-: #848794;
+  --dark-blue: #1D2C67;
+  --very-dark-blue: #0C112C;
+  --grandient1: #FFDEDB;
+  --grandient2: #FF4C96;
+  --font-size: 14px;
+  --font-family: "Raleway", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size);
+  color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
 .attribution {
+  position: absolute;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
 }
-.attribution .attribution a {
-  color: #3e52a3;
-}
 
-.status__bar_progression {
-  background-color: black;
-  width: 100px;
+.attribution a {
+  color: #3e52a3;
 }

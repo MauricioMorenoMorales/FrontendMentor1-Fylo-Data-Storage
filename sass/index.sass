@@ -1,11 +1,51 @@
+$pale-blue: var(--pale-blue)
+$gray-blue: var(--grayish-blue)
+$dark-blue: var(--dark-blue)
+$very-dark-blue: var(--very-dark-blue)
+$grandient1: var(--grandient1)
+$grandient2: var(--grandient2)
+$font-size: var(--font-size)
+$font-family: var(--font-family)
+$font-weight-normal: var(--font-weight-normal)
+$font-weight-bold: var(--font-weight-bold)
+
+//! Layout Mobile 375px Desktop 1440px
+
+
+:root
+     --pale-blue: #DDDBFF
+     --grayish-: #848794
+     --dark-blue: #1D2C67
+     --very-dark-blue: #0C112C
+     --grandient1: #FFDEDB
+     --grandient2: #FF4C96
+     //Fonts
+     --font-size: 14px
+     --font-family: 'Raleway', sans-serif
+     --font-weight-normal: 400
+     --font-weight-bold: 700
+
+body      
+     background-color: $very-dark-blue
+     font-family: $font-family
+     font-weight: $font-weight-normal
+     font-size: $font-size
+     color: $pale-blue
+     display: flex
+     justify-content: center
+     align-items: center
+main
+     height: 100vh
+     margin: 0
+     display: flex
+
+//*Footer
 .attribution
+     position: absolute
+     bottom: 0
      font-size: 11px
      text-align: center
 
-     .attribution a
-          color: hsl(228, 45%, 44%)
+.attribution a
+     color: hsl(228, 45%, 44%)
 
-
-.status__bar_progression
-     background-color: black
-     width: 100px

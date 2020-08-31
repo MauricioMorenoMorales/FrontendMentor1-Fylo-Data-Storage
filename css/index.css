@@ -3,8 +3,8 @@
   --grayish-: #848794;
   --dark-blue: #1D2C67;
   --very-dark-blue: #0C112C;
-  --grandient1: #FFDEDB;
-  --grandient2: #FF4C96;
+  --gradient1: #FFDEDB;
+  --gradient2: #FF4C96;
   --font-size: 14px;
   --font-family: "Raleway", sans-serif;
   --font-weight-normal: 400;
@@ -57,47 +57,78 @@ main .menu .lower-buttons figure {
 }
 main .status {
   position: relative;
+  bottom: -45px;
   background-color: var(--dark-blue);
   width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 10px;
+  height: 120px;
 }
 main .status__bubble {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   width: 130px;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: -10px;
+  height: 40px;
   background-color: white;
   color: black;
-  border: var(--pale-blue) 1px solid;
+  border: white 1px solid;
   border-radius: 10px 10px 0px 10px;
+}
+main .status__bubble p {
+  margin: 0;
+}
+main .status__bubble p b {
+  font-size: 30px;
 }
 main .status__bubble::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 91%;
+  left: 93%;
   width: 0;
   height: 0;
-  border: 12px solid transparent;
+  border: 20px solid transparent;
   border-top-color: white;
   border-bottom: 0;
   border-right: 0;
-  margin-left: -5px;
-  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-bottom: -21px;
 }
 main .status__upper {
   display: flex;
   justify-content: flex-start;
   margin: 0 20px;
 }
+main .status__bar__wraper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main .status__bar__wraper .status__bar--background {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 83%;
+  background-color: var(--very-dark-blue);
+  border-radius: 10px;
+}
+main .status__bar__wraper .status__bar--background .status__bar--value {
+  width: 81%;
+  height: 14px;
+  background: linear-gradient(to right, var(--gradient1), var(--gradient2));
+  border-radius: 30px;
+  margin-left: 5px;
+}
 main .status__lower {
   display: flex;
   justify-content: space-between;
-  margin: 0 30px;
+  margin: 0 40px;
 }
 
 .attribution {

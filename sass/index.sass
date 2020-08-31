@@ -40,6 +40,7 @@ body
      background-repeat: no-repeat
      background-attachment: fixed
      background-position: bottom
+     background-size: 100% auto
 main
      margin: 0
      margin-top: -30px
@@ -158,3 +159,40 @@ main
 .attribution a
      color: hsl(228, 45%, 44%)
 
+//-Larger screens
+
+@media screen and (min-width: 1500px)
+     main
+          margin-top: -100px
+@media screen and (min-width: 1700px)
+     main
+          margin-top: -150px
+@media screen and (min-width: 1800px)
+     main
+          margin-top: -150px
+
+//Smaller screens
+
+@media screen and (max-width: 990px)
+     body   
+          background-size: 990px auto
+@media screen and (max-width: 830px)
+     body  
+          background-image: url("../images/bg-mobile.png")
+          background-attachment: fixed
+          background-position: center
+          background-size: 100% 100%
+     main  
+          display: flex
+          flex-direction: column
+@media screen and (max-width: 520px)
+     body
+          main
+               width: 90%
+               .menu
+                    width: 90%
+               .status
+                    width: 90%
+                    &__buble
+                         &::after
+                              display: none

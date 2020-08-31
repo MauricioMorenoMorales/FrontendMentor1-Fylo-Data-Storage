@@ -26,6 +26,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
+  background-size: 100% auto;
 }
 
 main {
@@ -162,4 +163,52 @@ main .status__lower {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (min-width: 1500px) {
+  main {
+    margin-top: -100px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  main {
+    margin-top: -150px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  main {
+    margin-top: -150px;
+  }
+}
+@media screen and (max-width: 990px) {
+  body {
+    background-size: 990px auto;
+  }
+}
+@media screen and (max-width: 830px) {
+  body {
+    background-image: url("../images/bg-mobile.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 520px) {
+  body main {
+    width: 90%;
+  }
+  body main .menu {
+    width: 90%;
+  }
+  body main .status {
+    width: 90%;
+  }
+  body main .status__buble::after {
+    display: none;
+  }
 }

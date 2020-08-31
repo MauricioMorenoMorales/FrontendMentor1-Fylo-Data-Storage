@@ -1,6 +1,6 @@
 :root {
   --pale-blue: #DDDBFF;
-  --grayish-: #848794;
+  --grayish-blue: #848794;
   --dark-blue: #1D2C67;
   --very-dark-blue: #0C112C;
   --gradient1: #FFDEDB;
@@ -22,11 +22,15 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-image: url("../images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
 }
 
 main {
   margin: 0;
-  margin-top: -150px;
+  margin-top: -30px;
   display: flex;
 }
 main .menu {
@@ -55,6 +59,10 @@ main .menu .lower-buttons figure {
   align-items: center;
   justify-content: center;
 }
+main .menu .lower-buttons figure:hover {
+  cursor: pointer;
+  background-color: var(--dark-blue);
+}
 main .status {
   position: relative;
   bottom: -45px;
@@ -71,26 +79,31 @@ main .status__bubble {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 130px;
-  right: 30px;
-  top: -10px;
-  height: 40px;
+  width: 160px;
+  right: 45px;
+  top: -30px;
+  height: 50px;
   background-color: white;
   color: black;
   border: white 1px solid;
   border-radius: 10px 10px 0px 10px;
 }
 main .status__bubble p {
+  display: flex;
+  align-items: center;
   margin: 0;
+  color: var(--grayish-blue);
 }
 main .status__bubble p b {
   font-size: 30px;
+  color: #000;
+  margin-right: 5px;
 }
 main .status__bubble::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 93%;
+  left: 94.5%;
   width: 0;
   height: 0;
   border: 20px solid transparent;
@@ -119,11 +132,20 @@ main .status__bar__wraper .status__bar--background {
   border-radius: 10px;
 }
 main .status__bar__wraper .status__bar--background .status__bar--value {
+  position: relative;
   width: 81%;
   height: 14px;
   background: linear-gradient(to right, var(--gradient1), var(--gradient2));
   border-radius: 30px;
-  margin-left: 5px;
+  margin-left: 4px;
+}
+main .status__bar__wraper .status__bar--background .status__bar--value .status__bar--ball {
+  position: absolute;
+  right: 0;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: white;
 }
 main .status__lower {
   display: flex;

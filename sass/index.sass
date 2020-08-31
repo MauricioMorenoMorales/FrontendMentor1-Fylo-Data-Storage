@@ -161,31 +161,9 @@ main
      color: hsl(228, 45%, 44%)
 
 //-Larger screens
-
-@media screen and (min-width: 1500px)
-     main
-          margin-top: -100px
-@media screen and (min-width: 1700px)
-     main
-          margin-top: -150px
-@media screen and (min-width: 1800px)
-     main
-          margin-top: -150px
-
-//Smaller screens
-
-@media screen and (max-width: 990px)
-     body   
-          background-size: 990px auto
-@media screen and (max-width: 830px)
-     body  
-          background-image: url("../images/bg-mobile.png")
-          background-attachment: fixed
-          background-position: center
-          background-size: 100% 100%
-     main  
-          display: flex
-          flex-direction: column
+@media screen and (min-width: 1300px)
+     body
+          background-size: 100% 50%
 @media screen and (min-width: 521px)
      main
           .status
@@ -215,19 +193,32 @@ main
                          border-right: 0
                          margin-left: -10px
                          margin-bottom: -21px
-@media screen and (max-width: 520px)
+//Smaller screens
+@media screen and (max-width: 1300px)
      body
-          main
-               width: 90%
-               .menu
-                    width: 90%
-               .status
-                    width: 90%
-@media screen and (max-width: 500px)
+          background-size: 1300px auto
+@media screen and (max-width: 990px)
+     body
+          background-size: 990px 50%
+@media screen and (max-width: 830px)
+     body
+          background-image: url("../images/bg-mobile.png")
+          background-attachment: fixed
+          background-position: center
+          background-size: 100% 100%
      main
+          display: flex
+          flex-direction: column
+
+@media screen and (max-width: 520px)
+     main
+          width: 90%
           .menu
-               margin-bottom: 0
+               width: 90%
+               margin: auto
           .status
+               width: 90%
+               margin: auto
                margin-top: -30px
                padding: 30px 0 0 0
                &__bubble
